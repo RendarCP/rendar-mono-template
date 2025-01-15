@@ -1,0 +1,13 @@
+{
+  "name": "@rendar-mono-template/prettier-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9"
+  }
+}
