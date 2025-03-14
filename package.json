@@ -1,5 +1,5 @@
 {
-  "name": "rendar-mono-template",
+  "name": "root",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,10 +9,10 @@
     "test": "pnpm -r test",
     "lint": "pnpm -r lint",
     "publish-all": "pnpm -r publish",
-    "publish-eslint": "pnpm --filter @rendar/eslint-config publish",
-    "publish-prettier": "pnpm --filter @rendar/prettier-config publish",
-    "publish-react": "pnpm --filter @rendar/react-template publish",
-    "publish-nextjs": "pnpm --filter @rendar/nextjs-template publish"
+    "publish-eslint": "pnpm --filter @rendardev/eslint-config publish",
+    "publish-prettier": "pnpm --filter @rendardev/prettier-config publish",
+    "publish-react": "pnpm --filter @rendardev/react-template publish",
+    "publish-nextjs": "pnpm --filter @rendardev/nextjs-template publish"
   },
   "keywords": [],
   "author": "",
