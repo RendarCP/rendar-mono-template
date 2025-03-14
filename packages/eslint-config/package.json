@@ -1,18 +1,34 @@
 {
-  "name": "@rendar-mono-template/eslint-config",
+  "name": "@rendar-mono/eslint-config",
   "version": "1.0.0",
+  "description": "ESLint configurations for Rendar Mono Template",
   "main": "index.js",
+  "files": [
+    "*.js",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@next/eslint-plugin-next": "^15.1.4",
     "@typescript-eslint/eslint-plugin": "^8.20.0",
     "@typescript-eslint/parser": "^8.20.0",
-    "eslint": "^9.18.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "latest",
     "eslint-config-prettier": "^10.0.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-import-resolver-typescript": "^3.8.7",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
   }
 }

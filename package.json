@@ -8,37 +8,21 @@
     "build": "pnpm -r build",
     "test": "pnpm -r test",
     "lint": "pnpm -r lint",
-    "publish-template": "pnpm publish -r"
+    "publish-all": "pnpm -r publish",
+    "publish-eslint": "pnpm --filter @rendar-mono/eslint-config publish",
+    "publish-prettier": "pnpm --filter @rendar-mono/prettier-config publish",
+    "publish-react": "pnpm --filter @rendar-mono/react-template publish",
+    "publish-nextjs": "pnpm --filter @rendar-mono/nextjs-template publish"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.1.4",
-    "@trivago/prettier-plugin-sort-imports": "^5.2.1",
-    "@types/node": "^22.10.6",
-    "@types/react": "^19.0.7",
-    "@types/react-dom": "^19.0.3",
-    "@typescript-eslint/eslint-plugin": "^8.20.0",
-    "@typescript-eslint/parser": "^8.20.0",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.18.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "postcss": "^8.5.1",
-    "prettier": "^3.4.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.3",
-    "typescript-plugin-css-modules": "^5.1.0"
+    "eslint": "^9.0.0",
+    "typescript": "^5.8.2"
   },
-  "dependencies": {
-    "packages": "link:/Users/choseongweek/Documents/my-project/rendar-mono-template/packages"
-  }
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "pnpm@8.9.0"
 }
