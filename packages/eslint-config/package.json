@@ -5,7 +5,7 @@
     "type": "git",
     "url": "git+https://github.com/RendarCP/rendar-mono-template.git"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint configurations for Rendar Mono Template",
   "main": "index.js",
   "files": [
