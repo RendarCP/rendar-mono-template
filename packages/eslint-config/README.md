@@ -6,13 +6,13 @@ ESLint 설정 모음으로, Rendar Mono Template 프로젝트에서 일관된 �
 
 ```bash
 # NPM
-npm install --save-dev @rendar/eslint-config
+npm install --save-dev @rendardev/eslint-config
 
 # Yarn
-yarn add --dev @rendar/eslint-config
+yarn add --dev @rendardev/eslint-config
 
 # PNPM
-pnpm add -D @rendar/eslint-config
+pnpm add -D @rendardev/eslint-config
 ```
 
 ## 사용 방법
@@ -24,7 +24,7 @@ pnpm add -D @rendar/eslint-config
 ```javascript
 // .eslintrc.js
 module.exports = {
-  extends: ["@rendar/eslint-config"],
+  extends: ["@rendardev/eslint-config"],
 };
 ```
 
@@ -33,7 +33,7 @@ module.exports = {
 ```javascript
 // .eslintrc.js
 module.exports = {
-  extends: ["@rendar/eslint-config/react"],
+  extends: ["@rendardev/eslint-config/react"],
 };
 ```
 
@@ -42,7 +42,7 @@ module.exports = {
 ```javascript
 // .eslintrc.js
 module.exports = {
-  extends: ["@rendar/eslint-config/next"],
+  extends: ["@rendardev/eslint-config/next"],
 };
 ```
 
@@ -53,7 +53,7 @@ TypeScript 프로젝트에 더 강력한 타입 체크를 적용하려면:
 ```javascript
 // .eslintrc.js
 module.exports = {
-  extends: ["@rendar/eslint-config", "@rendar/eslint-config/typeCheck"],
+  extends: ["@rendardev/eslint-config", "@rendardev/eslint-config/typeCheck"],
 };
 ```
 
