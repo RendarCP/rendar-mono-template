@@ -9,10 +9,10 @@
     "test": "pnpm -r test",
     "lint": "pnpm -r lint",
     "publish-all": "pnpm -r publish",
-    "publish-eslint": "pnpm --filter @rendar-mono/eslint-config publish",
-    "publish-prettier": "pnpm --filter @rendar-mono/prettier-config publish",
-    "publish-react": "pnpm --filter @rendar-mono/react-template publish",
-    "publish-nextjs": "pnpm --filter @rendar-mono/nextjs-template publish"
+    "publish-eslint": "pnpm --filter @rendar/eslint-config publish",
+    "publish-prettier": "pnpm --filter @rendar/prettier-config publish",
+    "publish-react": "pnpm --filter @rendar/react-template publish",
+    "publish-nextjs": "pnpm --filter @rendar/nextjs-template publish"
   },
   "keywords": [],
   "author": "",

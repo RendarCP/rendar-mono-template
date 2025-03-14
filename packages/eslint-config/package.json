@@ -1,5 +1,5 @@
 {
-  "name": "@rendar-mono/eslint-config",
+  "name": "@rendar/eslint-config",
   "version": "1.0.0",
   "description": "ESLint configurations for Rendar Mono Template",
   "main": "index.js",
