@@ -12,28 +12,4 @@ module.exports = {
   endOfLine: "auto", // 운영체제에 따라 자동으로 개행 문자 설정
   htmlWhitespaceSensitivity: "css", // CSS display 속성 값에 따라 HTML 공백 처리
   embeddedLanguageFormatting: "off", // 템플릿 리터럴 내부 등의 포매팅 비활성화
-
-  // 플러그인 설정
-  plugins: [
-    "@trivago/prettier-plugin-sort-imports",
-    "prettier-plugin-tailwindcss",
-  ],
-
-  // import 문 정렬 설정
-  importOrder: [
-    "^@/api/(.*)$", // API 관련 임포트
-    "^@/ui/(.*)$", // UI 컴포넌트 임포트
-    "^@/lib/(.*)$", // 라이브러리 임포트
-    "^@/types/(.*)$", // 타입 정의 임포트
-    "^@/states/(.*)$", // 상태 관리 관련 임포트
-    "^@/utils/(.*)$", // 유틸리티 함수 임포트
-    "^@/assets/(.*)$", // 에셋(이미지 등) 임포트
-    "^@/components/(.*)$", // 일반 컴포넌트 임포트
-    "^@/components/core/(.*)$", // 코어 컴포넌트 임포트
-    "^@/hooks/(.*)$", // 커스텀 훅 임포트
-    "^@/styles/(.*)$", // 스타일 관련 임포트
-    "^[./]", // 상대 경로 임포트
-  ],
-  importOrderSeparation: true, // import 그룹 간 빈 줄 추가
-  importOrderSortSpecifiers: true, // import 구문 내부의 요소들도 정렬
 };

@@ -1,13 +1,26 @@
 {
-  "name": "@rendar-mono-template/prettier-config",
+  "name": "@rendardev/prettier-config",
+  "homepage": "https://github.com/RendarCP/rendar-mono-template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RendarCP/rendar-mono-template.git",
+    "directory": "packages/prettier-config"
+  },
   "version": "1.0.0",
+  "description": "Prettier configurations for Rendar Mono Template",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "README.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
   "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^5.2.1",
-    "prettier": "^3.4.2",
-    "prettier-plugin-tailwindcss": "^0.6.9"
+    "prettier": "^3.4.2"
+  },
+  "peerDependencies": {
+    "prettier": ">=3.0.0"
   }
 }

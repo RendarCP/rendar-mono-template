@@ -3,7 +3,8 @@
   "homepage": "https://github.com/RendarCP/rendar-mono-template",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RendarCP/rendar-mono-template.git"
+    "url": "git+https://github.com/RendarCP/rendar-mono-template.git",
+    "directory": "packages/eslint-config"
   },
   "version": "1.0.1",
   "description": "ESLint configurations for Rendar Mono Template",
