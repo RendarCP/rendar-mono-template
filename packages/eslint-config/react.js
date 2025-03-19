@@ -46,6 +46,7 @@ module.exports = {
         html: true, // HTML 요소도 적용
       },
     ],
+    "jsx-quotes": ["error", "prefer-single"], // JSX에서 작은따옴표 사용 강제
 
     // 일반 코드 스타일 규칙
     curly: ["error", "all"], // 모든 조건문에 중괄호 사용 강제

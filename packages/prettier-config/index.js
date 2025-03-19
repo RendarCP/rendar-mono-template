@@ -4,6 +4,7 @@ module.exports = {
   useTabs: false, // 들여쓰기에 탭 대신 스페이스 사용
   semi: true, // 문장 끝에 세미콜론 추가
   singleQuote: true, // 작은따옴표 사용
+  jsxSingleQuote: true, // JSX에서도 작은따옴표 사용
   quoteProps: "as-needed", // 객체의 속성에 필요한 경우에만 따옴표 추가
   trailingComma: "es5", // ES5에서 유효한 후행 쉼표 추가 (객체, 배열 등)
   bracketSpacing: true, // 객체 리터럴의 중괄호 사이에 공백 추가 ({ foo: bar })

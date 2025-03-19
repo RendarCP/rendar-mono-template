@@ -14,6 +14,8 @@ pnpm add -D @rendardev/prettier-config
 
 ## 사용 방법
 
+### package.json에서 사용하기
+
 `package.json`에 다음과 같이 추가하세요:
 
 ```json
@@ -22,11 +24,43 @@ pnpm add -D @rendardev/prettier-config
 }
 ```
 
+### .prettierrc 파일에서 사용하기
+
+`.prettierrc` 파일을 생성하고 다음과 같이 설정하세요:
+
+```json
+"@rendardev/prettier-config"
+```
+
 또는 `.prettierrc.js` 파일을 생성하고 다음과 같이 설정하세요:
 
 ```js
 module.exports = require("@rendardev/prettier-config");
 ```
+
+### 설정 오버라이드하기
+
+기본 설정을 확장하거나 오버라이드하려면 다음과 같이 할 수 있습니다:
+
+```json
+{
+  "prettier": "@rendardev/prettier-config",
+  "printWidth": 100,
+  "singleQuote": false
+}
+```
+
+또는 `.prettierrc.js`를 사용하는 경우:
+
+```js
+module.exports = {
+  ...require("@rendardev/prettier-config"),
+  printWidth: 100,
+  singleQuote: false,
+};
+```
+
+이렇게 하면 기본 설정을 유지하면서 특정 규칙만 변경할 수 있습니다.
 
 ## 설정 내용
 
