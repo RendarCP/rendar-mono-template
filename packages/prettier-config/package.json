@@ -6,7 +6,7 @@
     "url": "git+https://github.com/RendarCP/rendar-mono-template.git",
     "directory": "packages/prettier-config"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Prettier configurations for Rendar Mono Template",
   "main": "index.js",
   "files": [
