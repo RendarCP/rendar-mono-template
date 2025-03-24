@@ -8,7 +8,7 @@
   },
   "version": "1.0.0",
   "description": "TSConfig configurations for Rendar Mono Template",
-  "private": true,
+  "private": false,
   "files": [
     "base.json",
     "next.json",
