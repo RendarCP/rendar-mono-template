@@ -1,11 +1,20 @@
 {
-  "name": "@rendar-mono-template/tsconfig",
+  "name": "@rendardev/tsconfig",
+  "homepage": "https://github.com/RendarCP/rendar-mono-template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RendarCP/rendar-mono-template.git",
+    "directory": "packages/tsconfig"
+  },
   "version": "1.0.0",
+  "description": "TSConfig configurations for Rendar Mono Template",
+  "private": true,
   "files": [
     "base.json",
-    "react.json",
-    "next.json"
+    "next.json",
+    "react.json"
   ],
+  "license": "MIT",
   "dependencies": {
     "typescript": "^5.7.3"
   }
