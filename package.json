@@ -13,7 +13,11 @@
     "publish-prettier": "pnpm --filter @rendardev/prettier-config publish",
     "publish-tsconfig": "pnpm --filter @rendardev/tsconfig publish",
     "publish-react": "pnpm --filter @rendardev/react-template publish",
-    "publish-nextjs": "pnpm --filter @rendardev/nextjs-template publish"
+    "publish-nextjs": "pnpm --filter @rendardev/nextjs-template publish",
+    "dev:react": "pnpm --filter rendar-react-template dev",
+    "build:react": "pnpm --filter rendar-react-template build",
+    "preview:react": "pnpm --filter rendar-react-template preview",
+    "install:react": "pnpm --filter rendar-react-template install"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +25,10 @@
   "devDependencies": {
     "eslint": "^9.0.0",
     "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "workspaces": [
     "packages/*"

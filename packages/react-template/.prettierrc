@@ -1,0 +1,3 @@
+{
+  "extends": "@rendardev/prettier-config"
+}
