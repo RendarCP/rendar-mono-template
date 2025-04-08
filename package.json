@@ -12,7 +12,7 @@
     "publish-eslint": "pnpm --filter @rendardev/eslint-config publish",
     "publish-prettier": "pnpm --filter @rendardev/prettier-config publish",
     "publish-tsconfig": "pnpm --filter @rendardev/tsconfig publish",
-    "publish-react": "pnpm --filter @rendardev/create-react publish",
+    "publish-react": "pnpm --filter create-rendardev-react publish",
     "publish-nextjs": "pnpm --filter @rendardev/nextjs-template publish",
     "dev:react": "pnpm --filter rendar-react-template dev",
     "build:react": "pnpm --filter rendar-react-template build",

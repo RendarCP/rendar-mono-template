@@ -7,6 +7,7 @@ Vite 기반의 React 프로젝트 템플릿입니다.
 이 템플릿으로 새 프로젝트를 생성하려면:
 
 ```bash
+# 패키지가 npm에 등록된 경우
 # yarn 사용
 yarn create rendardev-react my-app
 
@@ -15,6 +16,19 @@ npm create rendardev-react my-app
 
 # pnpm 사용
 pnpm create rendardev-react my-app
+```
+
+### 로컬에서 직접 사용하기
+
+패키지가 npm에 등록되지 않은 경우 로컬에서 직접 사용할 수 있습니다:
+
+```bash
+# 패키지 디렉토리에서
+node bin/create.js my-app
+
+# 또는 전역으로 설치 후 사용
+npm link
+create-rendardev-react my-app
 ```
 
 ## 기술 스택
