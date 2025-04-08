@@ -19,6 +19,9 @@
     "vite",
     "typescript"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
