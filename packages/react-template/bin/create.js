@@ -1,8 +1,13 @@
 #!/usr/bin/env node
 
-const { execSync } = require("child_process");
-const path = require("path");
-const fs = require("fs");
+import { execSync } from "child_process";
+import path from "path";
+import fs from "fs";
+import { fileURLToPath } from "url";
+
+// __dirname 구현 (ES 모듈에서는 기본적으로 제공되지 않음)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // 프로젝트 이름 가져오기
 const projectName = process.argv[2];
