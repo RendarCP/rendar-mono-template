@@ -1,8 +1,11 @@
 {
-  "name": "rendar-react-template",
+  "name": "@rendardev/create-react",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "type": "module",
+  "bin": {
+    "create-rendardev-react": "./bin/create.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,7 +13,12 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,md}\""
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "template",
+    "vite",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {

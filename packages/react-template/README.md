@@ -2,6 +2,21 @@
 
 Vite 기반의 React 프로젝트 템플릿입니다.
 
+## 프로젝트 생성
+
+이 템플릿으로 새 프로젝트를 생성하려면:
+
+```bash
+# yarn 사용
+yarn create rendardev-react my-app
+
+# npm 사용
+npm create rendardev-react my-app
+
+# pnpm 사용
+pnpm create rendardev-react my-app
+```
+
 ## 기술 스택
 
 - React 19
