@@ -1,11 +1,19 @@
 {
-  "name": "create-rendardev-react",
-  "version": "1.0.1",
+  "name": "@rendardev/react-template",
+  "version": "1.0.0",
+  "description": "React + TypeScript + Vite 템플릿",
   "private": false,
   "type": "module",
-  "bin": {
-    "create-rendardev-react": "./bin/create.js"
-  },
+  "files": [
+    "src",
+    "index.html",
+    "vite.config.ts",
+    "tsconfig.json",
+    ".eslintrc.js",
+    ".prettierrc",
+    ".gitignore",
+    "README.md"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -33,5 +41,9 @@
     "@rendardev/tsconfig": "workspace:*",
     "@vitejs/plugin-react": "^4.3.4",
     "vite": "^6.0.7"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
   }
 }

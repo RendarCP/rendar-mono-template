@@ -1,4 +1,4 @@
-# Rendar React Template
+# @rendardev/react-template
 
 Vite 기반의 React 프로젝트 템플릿입니다.
 
@@ -7,28 +7,29 @@ Vite 기반의 React 프로젝트 템플릿입니다.
 이 템플릿으로 새 프로젝트를 생성하려면:
 
 ```bash
-# 패키지가 npm에 등록된 경우
-# yarn 사용
-yarn create rendardev-react my-app
-
 # npm 사용
 npm create rendardev-react my-app
+
+# yarn 사용
+yarn create rendardev-react my-app
 
 # pnpm 사용
 pnpm create rendardev-react my-app
 ```
 
-### 로컬에서 직접 사용하기
+## 직접 사용
 
-패키지가 npm에 등록되지 않은 경우 로컬에서 직접 사용할 수 있습니다:
+이 템플릿을 직접 사용하려면:
 
 ```bash
-# 패키지 디렉토리에서
-node bin/create.js my-app
+# npm
+npm install @rendardev/react-template
 
-# 또는 전역으로 설치 후 사용
-npm link
-create-rendardev-react my-app
+# yarn
+yarn add @rendardev/react-template
+
+# pnpm
+pnpm add @rendardev/react-template
 ```
 
 ## 기술 스택
@@ -56,36 +57,6 @@ src/
 │   └── index.tsx
 ├── main.tsx       # 진입점
 └── index.css      # 전역 스타일
-```
-
-## 시작하기
-
-### 설치
-
-```bash
-# 의존성 설치
-pnpm install
-
-# React 프로젝트 의존성만 설치
-pnpm install:react
-```
-
-### 개발 서버 실행
-
-```bash
-pnpm dev:react
-```
-
-### 빌드
-
-```bash
-pnpm build:react
-```
-
-### 미리보기
-
-```bash
-pnpm preview:react
 ```
 
 ## 주요 기능

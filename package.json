@@ -12,12 +12,12 @@
     "publish-eslint": "pnpm --filter @rendardev/eslint-config publish",
     "publish-prettier": "pnpm --filter @rendardev/prettier-config publish",
     "publish-tsconfig": "pnpm --filter @rendardev/tsconfig publish",
-    "publish-react": "pnpm --filter create-rendardev-react publish",
+    "publish-react-template": "pnpm --filter @rendardev/react-template publish",
+    "publish-create-react": "pnpm --filter create-rendardev-react publish",
     "publish-nextjs": "pnpm --filter @rendardev/nextjs-template publish",
-    "dev:react": "pnpm --filter rendar-react-template dev",
-    "build:react": "pnpm --filter rendar-react-template build",
-    "preview:react": "pnpm --filter rendar-react-template preview",
-    "install:react": "pnpm --filter rendar-react-template install"
+    "dev:react": "pnpm --filter @rendardev/react-template dev",
+    "build:react": "pnpm --filter @rendardev/react-template build",
+    "preview:react": "pnpm --filter @rendardev/react-template preview"
   },
   "keywords": [],
   "author": "",
