@@ -6,7 +6,7 @@
     "url": "git+https://github.com/RendarCP/rendar-mono-template.git",
     "directory": "packages/tsconfig"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TSConfig configurations for Rendar Mono Template",
   "private": false,
   "files": [
