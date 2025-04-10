@@ -114,6 +114,8 @@ async function createProjectFiles() {
         "@rendardev/eslint-config": "^1.0.0",
         "@rendardev/prettier-config": "^1.0.0",
         "@rendardev/tsconfig": "^1.0.0",
+        "@types/react": "^18.2.0",
+        "@types/react-dom": "^18.2.0",
         "@vitejs/plugin-react": "^4.3.4",
         eslint: "^9.0.0",
         prettier: "^3.2.5",

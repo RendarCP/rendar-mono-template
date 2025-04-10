@@ -8,6 +8,7 @@
       {
         "name": "typescript-plugin-css-modules"
       }
-    ]
+    ],
+    "types": ["react", "react-dom"]
   }
 }
