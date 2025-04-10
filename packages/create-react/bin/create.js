@@ -130,37 +130,26 @@ async function createProjectFiles() {
     // 임시 node_modules 삭제
     fs.removeSync(path.join(projectDir, "node_modules"));
 
-    // 의존성 설치
-    console.log(chalk.yellow("📦 의존성을 설치하는 중..."));
-
-    try {
-      console.log("npm 사용...");
-      execSync("npm install", { cwd: projectDir, stdio: "inherit" });
-    } catch (error) {
-      try {
-        console.log("yarn 사용...");
-        execSync("yarn", { cwd: projectDir, stdio: "inherit" });
-      } catch (error) {
-        try {
-          console.log("pnpm 사용...");
-          execSync("pnpm install", { cwd: projectDir, stdio: "inherit" });
-        } catch (error) {
-          console.log(
-            chalk.yellow(
-              "⚠️ 자동 의존성 설치에 실패했습니다. 수동으로 설치해주세요."
-            )
-          );
-        }
-      }
-    }
-
+    // 완료 메시지 출력
     console.log(
       chalk.green(`
 ✅ ${projectName} 프로젝트가 성공적으로 생성되었습니다!
 
-다음 명령어로 개발 서버를 실행할 수 있습니다:
+다음 명령어로 의존성을 설치하고 개발 서버를 실행하세요:
+
   cd ${projectName}
+
+  # npm 사용
+  npm install
   npm run dev
+
+  # 또는 yarn 사용
+  yarn
+  yarn dev
+
+  # 또는 pnpm 사용
+  pnpm install
+  pnpm dev
     `)
     );
   } catch (error) {

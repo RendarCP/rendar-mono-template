@@ -1,6 +1,6 @@
 {
   "name": "create-rendardev-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React 프로젝트 템플릿 생성기",
   "type": "module",
   "bin": {
