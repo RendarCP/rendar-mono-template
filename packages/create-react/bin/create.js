@@ -109,6 +109,10 @@ async function createProjectFiles() {
         react: "^19.0.0",
         "react-dom": "^19.0.0",
         "react-router-dom": "^7.4.1",
+        "@tanstack/react-query": "^5.24.1",
+        "@tanstack/react-query-devtools": "^5.24.1",
+        zustand: "^4.5.1",
+        axios: "^1.6.7",
       },
       devDependencies: {
         "@rendardev/eslint-config": "^1.0.0",
