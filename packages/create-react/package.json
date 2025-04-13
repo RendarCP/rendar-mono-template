@@ -1,5 +1,5 @@
 {
-  "name": "@rendardev/create-react",
+  "name": "create-rendardev-react",
   "version": "1.0.5",
   "description": "Create a new React project using @rendardev/react-template",
   "private": false,
