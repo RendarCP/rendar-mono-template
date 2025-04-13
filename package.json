@@ -13,7 +13,7 @@
     "publish-prettier": "pnpm --filter @rendardev/prettier-config publish",
     "publish-tsconfig": "pnpm --filter @rendardev/tsconfig publish",
     "publish-react-template": "pnpm --filter @rendardev/react-template publish",
-    "publish-create-react": "pnpm --filter @rendardev/create-react publish",
+    "publish-create-react": "pnpm --filter create-rendardev-react publish",
     "publish-nextjs": "pnpm --filter @rendardev/nextjs-template publish",
     "dev:react": "pnpm --filter @rendardev/react-template dev",
     "build:react": "pnpm --filter @rendardev/react-template build",
