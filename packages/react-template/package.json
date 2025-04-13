@@ -1,6 +1,6 @@
 {
   "name": "@rendardev/react-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React + TypeScript + Vite 템플릿",
   "private": false,
   "type": "module",
