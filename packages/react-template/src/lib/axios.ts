@@ -1,4 +1,9 @@
-import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from "axios";
+import axios, {
+  AxiosRequestConfig,
+  AxiosResponse,
+  AxiosError,
+  InternalAxiosRequestConfig,
+} from "axios";
 
 const baseURL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
@@ -12,13 +17,10 @@ const instance = axios.create({
 
 // 요청 인터셉터
 instance.interceptors.request.use(
-  (config: AxiosRequestConfig) => {
+  (config: InternalAxiosRequestConfig) => {
     const token = localStorage.getItem("token");
     if (token) {
-      config.headers = {
-        ...config.headers,
-        Authorization: `Bearer ${token}`,
-      };
+      config.headers.set("Authorization", `Bearer ${token}`);
     }
     return config;
   },

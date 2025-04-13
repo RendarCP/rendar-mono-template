@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useCounterStore } from "../stores/useCounterStore";
-import { api } from "../lib/axios";
+import instance from "../lib/axios";
 
 interface Post {
   id: number;
@@ -18,7 +18,7 @@ export function Example() {
     const fetchPosts = async () => {
       try {
         setLoading(true);
-        const response = await api.get<Post[]>("/posts");
+        const response = await instance.get<Post[]>("/posts");
         setPosts(response.data);
       } catch (err) {
         setError("게시물을 불러오는데 실패했습니다.");
