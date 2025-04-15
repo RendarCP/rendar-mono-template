@@ -133,3 +133,65 @@ CSS 모듈을 사용하여 컴포넌트별 스타일링이 가능합니다:
 ## 라이선스
 
 MIT
+
+## 테스트
+
+이 프로젝트는 [Playwright](https://playwright.dev/)를 사용하여 엔드-투-엔드(E2E) 테스트를 수행합니다.
+
+### 테스트 설정
+
+프로젝트에는 다음과 같은 테스트 관련 파일이 포함되어 있습니다:
+
+```
+e2e/              # 테스트 디렉토리
+├── example.spec.ts   # 예제 테스트 파일
+└── global.d.ts       # 타입 정의
+playwright.config.ts  # Playwright 설정
+playwright.d.ts       # 타입 선언
+```
+
+### 테스트 실행하기
+
+```bash
+# 브라우저 설치 (처음 한 번만 실행)
+npx playwright install
+
+# 모든 테스트 실행
+npm run test
+
+# UI 모드에서 테스트 실행
+npm run test:ui
+
+# 디버그 모드에서 테스트 실행
+npm run test:debug
+
+# 테스트 리포트 확인
+npm run test:report
+```
+
+### 테스트 작성하기
+
+새로운 테스트 파일은 `e2e` 디렉토리에 생성합니다. 파일 이름은 `.spec.ts` 확장자를 가져야 합니다.
+
+테스트 예제:
+
+```typescript
+import { test, expect } from "@playwright/test";
+
+test("기본 테스트", async ({ page }) => {
+  await page.goto("/");
+  await expect(page).toHaveTitle(/React/);
+});
+```
+
+### 지원되는 브라우저
+
+기본적으로 다음 브라우저에서 테스트를 실행할 수 있습니다:
+
+- Chromium
+- Firefox
+- WebKit (Safari)
+- 모바일 Chrome (Pixel 5)
+- 모바일 Safari (iPhone 12)
+
+자세한 내용은 [Playwright 문서](https://playwright.dev/docs/intro)를 참조하세요.

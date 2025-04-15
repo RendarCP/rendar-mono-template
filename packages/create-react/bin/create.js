@@ -79,10 +79,15 @@ async function createProjectFiles() {
       ".eslintrc.js",
       ".prettierrc",
       "README.md",
+      "playwright.config.ts",
+      "playwright.d.ts",
     ];
 
     // src 디렉토리 복사
     fs.copySync(path.join(templateDir, "src"), path.join(projectDir, "src"));
+
+    // e2e 디렉토리 복사
+    fs.copySync(path.join(templateDir, "e2e"), path.join(projectDir, "e2e"));
 
     // 개별 파일 복사
     for (const file of filesToCopy) {
@@ -104,6 +109,10 @@ async function createProjectFiles() {
         preview: "vite preview",
         lint: "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         format: 'prettier --write "src/**/*.{ts,tsx,css,md}"',
+        test: "playwright test",
+        "test:ui": "playwright test --ui",
+        "test:debug": "playwright test --debug",
+        "test:report": "playwright show-report",
       },
       dependencies: {
         react: "^19.0.0",
@@ -118,6 +127,8 @@ async function createProjectFiles() {
         "@rendardev/eslint-config": "^1.0.0",
         "@rendardev/prettier-config": "^1.0.0",
         "@rendardev/tsconfig": "^1.0.0",
+        "@playwright/test": "^1.42.1",
+        "@types/node": "^20.11.30",
         "@types/react": "^18.2.0",
         "@types/react-dom": "^18.2.0",
         "@vitejs/plugin-react": "^4.3.4",
@@ -156,6 +167,9 @@ async function createProjectFiles() {
   # 또는 pnpm 사용
   pnpm install
   pnpm dev
+
+Playwright 테스트를 위해 브라우저를 설치하려면:
+  npx playwright install
     `)
     );
   } catch (error) {
