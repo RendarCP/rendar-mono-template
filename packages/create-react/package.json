@@ -1,6 +1,6 @@
 {
   "name": "create-rendardev-react",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Create a new React project using @rendardev/react-template",
   "private": false,
   "type": "module",
